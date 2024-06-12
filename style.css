@@ -1,0 +1,120 @@
+* {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  z-index: 3;
+  background-image: url('Assets/COD_BG.png');
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-color: #222; */
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative; 
+  z-index: 1;
+  margin-top: 120px;
+  max-width: 400px;
+  margin-left: 5px;
+  padding: 20px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input ::placeholder{
+  color: #424141;
+}
+
+.input input {
+  color: #0e0d0d;
+  background-color: rgba(0, 0, 0, 0);
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(58, 58, 58, 0.692);
+  outline: none;
+  font-size: 18px;
+}
+
+.input button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(141, 140, 138, 0.164);
+  color: #424141;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.input button:hover {
+  background-color: #373737d0;
+  color: #e8e6e6;
+}
+
+.list {
+  list-style: none;
+  color: #e8e6e6;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #9a97976c;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+.list li span {
+  flex: 1;
+  font-size: 18px;
+}
+
+.list li input {
+  margin-right: 10px;
+}
+
+.list li button {
+  padding: 5px 10px;
+  border: 1px solid rgba(113, 111, 111, 0);
+  border-radius:3px;
+  outline: none;
+  background-color: #77767600;
+  color: #dfdddd;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.list li button:hover {
+  color: rgba(194, 192, 192, 0.678);
+  background-color: #55555509;
+  border: 1px solid rgba(177, 175, 175, 0.774);
+}
+
+.list li.completed span {
+  text-decoration: line-through;
+  color: #3c3c3cce;
+}
+
+.list li input[type="checkbox"]:checked {
+  accent-color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("Assets/small-image.png");
+  }
+}
+
